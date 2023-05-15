@@ -1,0 +1,97 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    background: #8CC84C;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-tag {
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    
+}
+
+.search-tag__headding {
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+
+}   
+
+.search-tag__container {
+    max-height: calc(100vh - 250px);
+    overflow: auto;
+    margin-top: 30px;
+    width: 100%;
+    min-height: 80px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.search-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-item {
+    display: inline-flex;
+    height: 40px;
+    padding: 0 6px;
+    gap: 8px;
+    border-radius: 6px;
+    align-items: center;
+    background: #8CC84C;
+}
+
+.search-text {
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.remove-icon {
+    color: #ddd;
+
+}
+
+.search-input {
+    flex: 1;
+    min-width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 20px;
+    order: 5;
+}
+
+.search-tag__btn {
+    display: block;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #8CC84C;
+    padding: 0 12px;
+}
+
+

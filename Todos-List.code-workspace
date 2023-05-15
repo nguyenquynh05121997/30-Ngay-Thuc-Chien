@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../hoc_HTML-Online/30Ngay-thuc-chien/Todos-List"
+		},
+		{
+			"path": "../hoc_HTML-Online/30Ngay-thuc-chien/toast notification"
+		},
+		{
+			"path": "../hoc_HTML-Online/30Ngay-thuc-chien/custom-rangInput"
+		},
+		{
+			"path": "../hoc_HTML-Online/30Ngay-thuc-chien/slice-img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "slice-img"
+	}
+}

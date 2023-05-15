@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <form action="" class="form" autocomplete="off" id="form-1">
+        <h1 class="form__title">Register</h1>
+        <div class="form__container">
+            <section class="form__group">
+                <input class="input name" type="text" name="use-name" id="use-name" maxlength="30">
+                <label class="label-text" for="use-name">User Name</label>
+                <p class="message"></p>
+                <div class="line"></div>
+            </section>
+
+            <section class="form__group">
+                <input class="input email" type="email" name="use-email" id="use-email">
+                <label class="label-text" for="use-email">User Email</label>
+                <p class="message"></p>
+                <div class="line"></div>
+
+            </section>
+
+            <section class="form__group">
+                <input class="input password" type="text" name="use-password" id="use-password">
+                <label class="label-text" for="use-password">Enter PassWord</label>
+                <p class="message"></p>
+                <div class="line"></div>
+
+            </section>
+
+            <section class="form__group">
+                <input class="input cf-password" type="text" name="confirm-password" id="confirm-password">
+                <label class="label-text" for="confirm-password">Confirm PassWord</label>
+                <p class="message"></p>
+                <div class="line"></div>
+
+            </section>
+        </div>
+
+        <input class="btn" type="button" value="Log In"></input>
+        <article class="form__footer">
+            <p class="form__sub-title">Not a member</p>
+            <a class="form__link" href="#!">Sign up</a>
+        </article>
+
+    </form>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

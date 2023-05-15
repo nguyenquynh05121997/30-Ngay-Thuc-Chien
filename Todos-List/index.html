@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="app-todo">
+        <h1 class="todo__title">Todo App</h1>
+        <div class="todo__input">
+            <input type="text" name="name" id="name" placeholder="Add your new Todo" autocomplete="off">
+            <button class="btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <ul class="todo__list">
+            <!-- <li class="todo__item">
+                <span class="item-text">Công việc hôm nay của ban là gì ?</span>
+                <div class="item-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </li> -->
+        </ul>
+        <article class="todo__clear">
+            <span class="text-clear">You have <span class="list-number">4</span> pending tasks</span>
+            <button class="clear-btn">Clear All</button>
+        </article>
+    </section>
+
+    
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.app-todo {
+    width: 600px;
+    min-height: 200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.todo__title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.todo__input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#name {
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    color: #333;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#name::placeholder {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#name:focus {
+    border: 2px solid #723BBA;
+    transition: all 0.25s ease-in;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #723BBA;
+    font-size: 30px;
+    color: #fff;
+}
+
+.btn:hover,
+.clear-btn:hover,
+.item-icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.25s ease-in;
+}
+
+.todo__list {
+    margin-top: 10px;
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.todo__item {
+    height: 50px;
+    width: 100%;
+    background: #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.todo__item:nth-child(odd) {
+    background: #eee;
+}
+
+.todo__item + .todo__item {
+    margin-top: 10px;
+}
+
+.item-text,.text-clear {
+    font-size: 20px;
+    color: #384248;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item-icon {
+    height: 100%;
+    width: 50px;
+    background: #E54D3E;
+    display: flex;
+    justify-content: center;
+    color: #Fff;
+    align-items: center;
+    font-size: 20px;
+}
+
+.todo__clear {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-btn {
+    height: 50px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: #723BBA;
+    color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 4px;
+}

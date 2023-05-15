@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Weather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app">
+        <input type="text" name="search" id="" class="search">
+        <h1 class="local"><strong class="city">Hai Duong</strong>,<strong class="country">VN</strong></h1>
+        <div class="date-time">
+            <span class="date">24/12/2023</span>
+        </div>
+        <div class="main-deg">
+            <span class="deg-text">28 ºC</span>
+        </div>
+        <p class="main-weather">Clouds</p>
+        <div class="weather-detail">
+            <div class="weather-item">
+                <i class="fa-regular fa-eye"></i>
+                <span class="weather-item-info visibility">10000 m</span>
+            </div>
+
+            <div class="weather-item">
+                <i class="fa-solid fa-wind"></i>
+                <span class="weather-item-info cloud">10000 m</span>
+            </div>
+
+            <div class="weather-item">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span class="weather-item-info sun">10000 m</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>

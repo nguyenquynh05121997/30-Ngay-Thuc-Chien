@@ -1,0 +1,41 @@
+table {
+    width: 600px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+th,tr,td {
+    border: 1px solid #333;
+    padding: 6px;
+}
+
+form {
+    width: 600px;
+    max-width: 100%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group + .form-group {
+    margin-top: 10px;
+}
+
+.form-group label {
+    width: 100px;
+}
+
+input {
+    height: 30px;
+    flex: 1;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+button {
+    margin: 10px auto;
+    min-width: 100px;
+    min-height: 30px;
+}
