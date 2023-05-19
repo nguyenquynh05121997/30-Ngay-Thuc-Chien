@@ -1,0 +1,120 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #85FFBD;
+    background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+}
+
+.group {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+
+}
+
+.group::after {
+    position: absolute;
+    display: inline-flex;
+    width: 0;
+    height: 40px;
+    background: #fff;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(50px);
+    visibility: hidden;
+    font-weight: 600;
+    opacity: 0;
+
+}
+
+.group::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 51%, 0 0, 100% 0);
+    background: #fff;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.group:hover::after {
+    transform: translateY(-100px);
+    visibility: visible;
+    opacity: 1;
+    width: 100px;
+
+}
+
+.group:hover::before {
+    transform: translateY(-70px);
+    visibility: visible;
+    opacity: 1;
+
+  
+}
+
+.fa-facebook {
+    color: #0C00FF;
+}
+
+.facebook::after {
+    content: 'Facebook';
+    color: #0C00FF;
+}
+
+.youtube::after {
+    content: 'YouTube';
+    color: #f00;
+}
+
+.tiktok::after {
+    content: 'TikTok';
+    color: #000;
+}
+
+.instagram::after {
+    content: 'Instagram';
+    color: pink;
+}
+.fa-youtube {
+    color: red;
+}
+
+.fa-tiktok {
+    color: #000;
+}
+
+.fa-instagram {
+    color: pink;
+}
+
+.fa-brands {
+    font-size: 50px;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+}
+

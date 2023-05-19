@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day1</title>
+    <title>UpLoad-Img</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="image">
-        
-    </section>
-
-    <div class="big__img hide">
-        <i class="fa-regular fa-circle-xmark close"></i>
-        <i class="fa-solid fa-angle-right next"></i>
-        <i class="fa-solid fa-angle-left prev"></i>
-        <img src="" alt="">
+    
+    <div class="container">
+        <span class="error"></span>
+        <label class="preview" for="upfile">
+            <img class="img" alt="">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <span class="text">Upload to preview Image</span>
+        </label>
+        <input type="file" name="upfile" id="upfile" hidden>
     </div>
-    
-    
     <script src="main.js"></script>
 </body>
 </html>

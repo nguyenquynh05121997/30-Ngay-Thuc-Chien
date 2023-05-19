@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #85FFBD;
+    background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.box1 {
+    box-sizing: border-box;
+    padding: 0 40px;
+    height: 100vh;
+    background-color: #055e2f;
+    background-image: linear-gradient(90deg, #05542a 0%, #9b9717 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.h1-text {
+    color : #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.p-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.box2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(90deg, #1057da 0%, #ab1425 100%);
+
+
+}
+
+.box2-box {
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.box2-box .p-text {
+    color: #055e2f;
+}
+
+.number {
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.number-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #9b9717;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.h2-text {
+    font-size: 24px;
+    color: #fff;
+    background: #1057da;
+    font-weight: 600;
+    line-height: 2;
+    min-width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.number-to-up {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.h1-text.close {
+    transform: translateX(200%);
+    transition: all 1s ease-out;
+}
+.h1-text.open {
+    transform: translate(0);
+    transition: all 1s ease-in;
+}
+
+.box1 .p-text.close {
+    transition: all 1s ease-out;
+    transform: translateX(-200%);
+}
+.box1 .p-text.open {
+    transform: translateX(0);
+    transition: all 1s ease-in;
+}
+
+.box2-box.close {
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+.box2-box.open {
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
+
+
+
+
