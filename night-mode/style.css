@@ -1,0 +1,121 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: #fff;
+}
+
+body.night {
+    background: #555;
+}
+
+.head-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo,.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3a883a;
+}
+
+.toggle {
+    width: 100px;
+    height: 30px;
+    background: #555;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.25s;
+
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: all 0.25s;
+
+}
+
+
+.toggle.active {
+    background: #56e856;
+    transition: all 0.5s;
+}
+
+.toggle.active::after {
+    left: 71px;
+    transition: all 0.25s;
+}
+
+.heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 50px auto;
+    background: #ccc;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content.night {
+    background: #666;
+}
+
+.sub-title {
+    font-size: 20px;
+    color: #333;
+}
+
+.sub-title.night {
+    color: #fff
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #3a883a;
+    color: #fff;
+    min-width: 100px;
+    padding: 14px 28px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.title.night {
+    color:rgb(41, 41, 133)
+}
+.logo.night {
+    color: rgb(144, 144, 250)
+}
+
+.btn.night {
+    background: rgb(41, 41, 133);
+}
+
